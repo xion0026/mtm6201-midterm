@@ -153,7 +153,7 @@ header {
 .strawberryphoto,
 .teaphoto,
 .totephoto{
-    height: 280px;
+    height: 260px;
     width: 100%;
     margin-top: 15px;
 }
@@ -161,6 +161,8 @@ header {
     background-color:#B44596 ;
     border-radius: 97%;
     color: #F0EEEB;
+    margin: 10px;
+   
 
 }
 /* footer info */
@@ -204,17 +206,195 @@ footer {
     padding: 20px;
     color: #F0EEEB;
 }
+}
 
 /* desktop screen */
 @media screen and (min-width: 720px){
-/* only */
-.body{
+header {
+        position: relative;
+}
+body{
     max-width: 1400px;
 }
-
+.navigation{
+    margin: 10px;
+}
+.logo{
+    width: 100px;
+    margin: 0 40px 0 10px;
+    float:left;
+}
 .headerback{
     margin:0 auto;   
     background-image: url(../images/back1440.jpg);
     background-position: bottom;
-    width: 90%;
+    width: 100%;
+    max-width: 100%; 
+    height: 380px;
+    text-align: center;
+}
+.list,
+.navigation li{
+	display: flex;
+    justify-content: space-evenly;	  
+}
+.list{
+    padding-top: 40px;
+}
+.shop{
+    padding-left: 40px;
+}
+.list a{   
+    color: #F0EEEB;
+    font-size: 30px;
+    text-decoration: none;
+}
+.delicious{
+    color: #F0EEEB;
+    margin: 55px 10px 0 10px;
+}
+.delicious h4{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.delicious h2{
+    font-size: 45px;
+    color: #B44596;
+    margin-bottom: 15px;
+}
+.order{
+    background-color:#B44596 ;
+    border-radius: 97%;
+    color: #F0EEEB;
+    margin: 15px 10px 10px 500px;
+}
+.products h4{
+    font-size: 20px;
+    padding: 10px 10px 0 10px;
+}
+.products p{
+    font-size: 10px;
+    padding: 5px;
+}
+.products{
+    margin: 10px 0 0 0;   
+    background-color: #F0EEEB;
+    opacity: 0.5;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* container */
+.container{
+    margin: 30px;
+    text-align: center;
+}
+.purplephoto,
+.matchaphoto,
+.chocolatephoto,
+.strawberryphoto,
+.teaphoto,
+.totephoto{
+    height: 220px;
+    max-width: 400px;
+    width: 95%;
+}
+.flavor{
+    margin:20px 0 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+
+}
+.only h2,
+.activities h2{
+    font-size: 40px;
+    color: #B44596;  
+}
+.line{
+    height: 2px;
+    background-color: #B44596;
+    margin-top: 10px;       
+}
+.flavor p{
+    margin: 10px;
+}
+/* activities */
+.creamsocial,
+.creamery{
+    height:500px;
+}
+.activity{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+.activity button{
+    margin: 10px;
+    background-color:#B44596 ;
+    border-radius: 97%;
+    color: #F0EEEB;
+}
+/* location */
+.footerinfo{
+    margin: 30px;
+    text-align: center;
+}
+.maps h2{
+    color: #B44596;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.footerinfo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+.contact h3{
+    color: #B44596;
+    font-size: 30px;
+    margin: 120px 0 30px 0;
+}
+.social a{
+    text-decoration: none;
+    color: #B44596;
+}
+.social p{
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+.follow{
+    color: #B44596;
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.socialicon{
+    display: flex; 
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.socialicon a{
+    margin: 20px 30px 0 0;
+}
+footer p{
+	position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
 }
