@@ -8,60 +8,55 @@
   <title>Little Woods</title>
    <!--Icon font-->
    <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+   <!-- css -->
   <link rel="stylesheet" href="css/main.css">
 </head>
+
 
 <body>
   <!--header-->
 <header class="headerstyle">
   <!--navigation-->
-
+<section class="headerback">
   <nav class="navigation">
-    <picture class="back">
-      <source srcset="images/back1440.jpg"
-                       media="(min-width: 720px)">
-  
-      <source srcset="images/back720.jpg"
-                       media="(max-width:719px)"> 
-      <img src="images/back.jpg" alt="backpicture">
-  </picture>
     <img class="logo" src="logo.svg" alt="logo">
     <ul class="list">
-      <li class="home">Home</li>
-      <li>Shop</li>
-      <li>Contact</li> 
+      <li class="home"><a href="index.html">Home</a></li>
+      <li class="shop"><a href="./html/shop.html">Shop</li>
+      <li><a href="./html/contact.html">Contact</a></li> 
       <li class="search">
-        <form action="#" method="get">
-         <input type="text" placeholder="  search" name=" search">
-         <button class="magnifier"><i class="im im-magnifier" style="color:palevioletred;"></i></button>
-        </form>
+        <a href="#"><i class="im im-magnifier" style="color:#F0EEEB;"></i></a>     
     </li>  
     </ul>
+  </nav>
     <div class="delicious">
-      <h1>Delicious Ice Cream</h1>
+      <h4>Delicious Ice Cream</h4>
       <h2>Coffee, Coconut With Baked Nuts</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Nostrum sapiente optio, minima vel quam aspernatur quo?Sit 
-        repellendus quo, nobis sint ut quibusdam minima optio quasi 
-        quis in，architecto veritatis!</p>
-        <button type="button">Order Now!</button>
+        Nostrum sapiente optio, minima vel quam aspernatur quo?</p>
+      <button class="order" type="button">Order Now!</button>
      </div>
   
      <div class="products">
        <div>
-        <h3>Ice Cream</h3>
+        <h4>Ice Cream</h4>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
        </div>
       <div>
-        <h3>Ice Cream Bread</h3>
+        <h4>Ice Cream Bread</h4>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
       </div>
       <div>
-        <h3>New Products</h3>
+        <h4>New Products</h4>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
       </div>
     </div>
-    </nav>
+</section>
+
 
 </header>
  <!--main content-->
@@ -71,59 +66,110 @@
   <div>
     <h2>Only Fresh Ice Cream</h2>
   </div>
+  <div class="line"></div>
+
   <div class="flavor">
     <div class="purple">
-        <img>
+      <picture>
+        <!--  responsive image -->
+        <source srcset="images/purple1920.jpg"
+                 media="(min-width: 720px)">
+                   
+          <source srcset="images/purple960.jpg"
+                  media="(max-width:719px)">   
+  
+          <img class="purplephoto" src="images/purple.jpg" alt="purple ice">
+             </picture>
         <div>
             <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                 Eius ducimus officiis delectus quisquam sunt enim quas, commodi nihil nam. 
+              Ice purple is made by purple and blackberry.
             </p>
         </div>  
     </div> 
        
     <div class="matcha">
-      <img>
+      <picture>
+        <!--  responsive image -->
+        <source srcset="images/matcha1920.jpg"
+                 media="(min-width: 720px)">
+                   
+          <source srcset="images/matcha960.jpg"
+                  media="(max-width:719px)">   
+  
+          <img class="matchaphoto" src="images/matcha.jpg" alt="matcha ice">
+             </picture>
       <div>
           <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-               Eius ducimus officiis delectus quisquam sunt enim quas, commodi nihil nam. 
+            A mix of handmade matcha from Japan and milk ice cream
           </p>
       </div>  
     </div> 
      
     <div class="chocolate">
-      <img>
+      <picture>
+        <!--  responsive image -->
+        <source srcset="images/chocolate1920.jpg"
+                 media="(min-width: 720px)">
+                   
+          <source srcset="images/chocolate960.jpg"
+                  media="(max-width:719px)">   
+  
+          <img class="chocolatephoto" src="images/chocolate.jpg" alt="chocolate ice">
+             </picture>
       <div>
           <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-               Eius ducimus officiis delectus quisquam sunt enim quas, commodi nihil nam. 
+            Belgian dark chocolate mixed with Brazilian cocoa has a great taste.
           </p>
       </div>  
     </div> 
     
-    <div class="stewberry">
-      <img>
+    <div class="strawberry">
+      <picture>
+        <!--  responsive image -->
+        <source srcset="images/strawberry1920.jpg"
+                 media="(min-width: 720px)">
+                   
+          <source srcset="images/strawberry960.jpg"
+                  media="(max-width:719px)">   
+  
+          <img class="strawberryphoto" src="images/strawberry.jpg" alt="strawberry ice">
+             </picture>
       <div>
           <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-               Eius ducimus officiis delectus quisquam sunt enim quas, commodi nihil nam. 
+            A feast of mixed flavors of strawberry, cranberry and blackberry.
           </p>
       </div>  
     </div> 
     
-    <div class="stewberry">
-      <img>
+    <div class="tea">
+      <picture>
+        <!--  responsive image -->
+        <source srcset="images/tea1920.jpg"
+                 media="(min-width: 720px)">
+                   
+          <source srcset="images/tea960.jpg"
+                  media="(max-width:719px)">   
+  
+          <img class="teaphoto" src="images/tea.jpg" alt="tea ice">
+             </picture>
       <div>
           <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-               Eius ducimus officiis delectus quisquam sunt enim quas, commodi nihil nam. 
+            Snow top milk ice cream blend tea.
           </p>
       </div>  
     </div> 
     
-    <div class="stewberry">
-      <img>
+    <div class="tote">
+      <picture>
+        <!--  responsive image -->
+        <source srcset="images/tote1920.jpg"
+                 media="(min-width: 720px)">
+                   
+          <source srcset="images/tote960.jpg"
+                  media="(max-width:719px)">   
+  
+          <img class="totephoto" src="images/tote.jpg" alt="tote ice">
+             </picture>
       <div>
           <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -139,6 +185,7 @@
     <div>
         <h2>Activities</h2>
     </div>
+    <div class="line"></div>
     <div class="activity">
         <div class="social">
             <picture>
@@ -150,7 +197,7 @@
           <source srcset="images/social480.jpg"
                   media="(max-width:719px)">   
   
-          <img src="images/social.jpg" alt="activities">
+          <img class="creamery" src="images/social.jpg" alt="activities">
              </picture>
             <button type="submit"> Order Now </button>
           </div>
@@ -165,32 +212,54 @@
                   <source srcset="images/social27@0.5x.jpg"
                           media="(max-width:719px)">   
           
-                  <img src="images/social27.jpg" alt="activities">
+                  <img class="creamsocial"  src="images/social27.jpg" alt="activities">
                      </picture>
               <button type="submit"> Order Now </button>
         </div>
     </div>
- 
-</section>
-
-<!-- Location -->
-<section class="location">
-  <h2>Location</h2>
-  <div class="map">
-      <div class="google-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22429.974151896025!2d-75.77190982255873!3d45.35392383670256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce07191b4a27ad%3A0xc49d2400f64d7095!2sAlgonquin%20College%20-%20Horticulture%20Gardens!5e0!3m2!1sen!2ssg!4v1629187533747!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-      <div class="details">
-        <h4>Details</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quisquam non ipsa voluptatem optio. Sequi aliquam corrupti ea, ullam, incidunt sint odio molestiae nihil facilis est itaque atque ab repudiandae!</p>
-      </div>
-  </div>
 </section>
 </main> 
 
+<article class="footerinfo" id="footerinfo">
+  <!-- Google Map-->
+  <section class="maps">
+    <h2>Location</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22429.974151896025!2d-75.77190982255873!3d45.35392383670256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce07191b4a27ad%3A0xc49d2400f64d7095!2sAlgonquin%20College%20-%20Horticulture%20Gardens!5e0!3m2!1sen!2ssg!4v1629187533747!5m2!1sen!2ssg" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <!-- Social Media-->
+  <section class="social">
+    <a class="contact" href="#">
+      <h3>Contact</h3>
+    </a>
+    <p>Address: 108 Withrow Ave, Ottawa, Ontario</p>
+
+    <h3>Follow Us</h3>
+    <ul class="socialicon">
+      <li>
+        <a href="#">
+          <i class="im im-instagram"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="im im-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="im im-wechat"></i>
+        </a>
+      </li>
+    </ul>
+
+  </section>
+</article>
+<br>
+
 <!-- footer -->
 <footer>
-  <p>All Rights Reserved &copy; Shaded Earth Coffee 2021.</p>
+  <p>All Rights Reserved &copy; Little Wood Ice Cream 2021.</p>
 </footer> 
 </body>
 </html>

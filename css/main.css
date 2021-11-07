@@ -43,67 +43,170 @@ table {
 	border-spacing: 0;
 }
 
+/* Color Scheme:
+dark:#B44596，
+light:#CC40AE
+white:#F0EEEB
+
+
+/* content font */
+body{
+    font-family: 'Lato', sans-serif;
+}
 /* mobile screen */
 @media screen and (max-width: 720px){
+header {
+        position: relative;
+}
+.headerback{
+    margin:0 auto;   
+    background-image: url(../images/back720.jpg);
+    background-position: bottom;
+    width: 90%;
+    max-width: 100%;
+    padding: 10px;
+    height: 450px;
+    text-align: center;
+}
 .logo{
     width: 90px;
-    margin: 20px 10px 0 40px ;
-    padding: 0 20px 0 20p;
+    margin: 10px 20px 0 10px ;
 }
-.back{
-    position: relative;
+.navigation,
+.navigation.logo,
+.navigation .list,
+.navigation li{
+	display: flex;	
 }
-.logo,
-.list{
-    position: absolute;
+.list a{   
+    color: #F0EEEB;
+    padding-left: 15px;
+    font-size: 20px;
+    text-decoration: none;
 }
-.navigation {
-    display: flex;	
-}  
-.navigation .logo,
-	.navigation .list,
-	.navigation li{
-		display: flex;	
-	}
-.list li{   
-    color: #ffffff;
-    font-size: 25px;  
+.shop,
+.search{
+    padding-left: 30px;   
 }
 .list{
-    margin: 40px 30px 0 200px;
+    margin: 50px 10px 0 10px;
 }
-.list li{
-    padding: 15px;
+.navigation{
+    margin: 10px;
 }
-nav input{
-    width: 90%;
-    border-style:none; 
-    border-radius: 90%;
-}
-nav form{
-    display: flex;
-}
-nav button{
-    background-color:#ffffff;
-}
-.delicious,
-.products{
-    position: absolute;
-}
+
 .delicious{
-    color: #ffffff;
-    margin: 150px 40px 0 40px;
+    color: #F0EEEB;
+    margin: 60px 10px 0 10px;
+}
+.delicious h4{
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+.delicious h2{
+    font-size: 30px;
+    color: #B44596;
+    margin-bottom: 15px;
+}
+.order{
+    background-color:#B44596 ;
+    border-radius: 97%;
+    color: #F0EEEB;
+    margin: 15px 10px 10px 300px;
+}
+.products h4{
+    font-size: 15px;
+    padding: 10px 10px 0 10px;
+}
+.products p{
+    font-size: 11px;
+    padding: 10px;
 }
 .products{
-    margin: 320px 40px 0 40px;
-    background-color: rgb(231, 222, 222);
-    opacity: 0.7;
+    margin: 15px 10px 0 10px;   
+    background-color: #F0EEEB;
+    opacity: 0.5;
+    color: black;
     display: flex;
 }
-.products h3,
-.products p{
-    padding: 10px 15px 0 15px;
+
+/* container */
+.container{
+    margin: 20px;
 }
+.only h2,
+.activities h2{
+    font-size: 30px;
+    color: #B44596;  
+}
+.line{
+    height: 2px;
+    background-color: #B44596;
+    margin-top: 10px;       
+}
+.flavor p{
+    margin: 10px;
+}
+.purplephoto,
+.matchaphoto,
+.chocolatephoto,
+.strawberryphoto,
+.teaphoto,
+.totephoto{
+    height: 280px;
+    width: 100%;
+    margin-top: 15px;
+}
+.activities button{
+    background-color:#B44596 ;
+    border-radius: 97%;
+    color: #F0EEEB;
+
+}
+/* footer info */
+/* hidden maps in screen max-width 720px */
+.footerinfo{
+    margin: 20px;
+    text-align: center;
+}
+.maps{
+    display: none;
+}
+.social h3{
+    border:1px solid #CC40AE;
+    padding: 10px;
+    width:100px;
+}
+.contact a{
+    text-decoration: none;
+}
+
+}
+.social p{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+
+.social li a {
+	color: #B44596;
+}
+
+footer {
+	margin-top: 5px;
+	display: block;
+	position: relative;
+	margin-bottom: 2rem;
+    background-color: #CC40AE;
+    padding: 20px;
+    color: #F0EEEB;
+}
+
+
+
+
+
+
 
 
 
@@ -133,12 +236,7 @@ nav button{
     display: flex;
     flex-direction: row;
 }
-/* map */
-.map{
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-}
+
 /* footer */
 
 
