@@ -97,7 +97,7 @@ header {
 
 .delicious{
     color: #F0EEEB;
-    margin: 60px 10px 0 10px;
+    margin: 50px 10px 0 10px;
 }
 .delicious h4{
     margin-bottom: 15px;
@@ -166,8 +166,7 @@ header {
 /* footer info */
 /* hidden maps in screen max-width 720px */
 .footerinfo{
-    margin: 20px;
-    text-align: center;
+    margin: 20px 20px 5px 20px;
 }
 .maps{
     display: none;
@@ -175,69 +174,47 @@ header {
 .social h3{
     border:1px solid #CC40AE;
     padding: 10px;
-    width:100px;
-}
-.contact a{
-    text-decoration: none;
-}
-
+    width:120px;
 }
 .social p{
-    font-size: 20px;
-    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-
-
-.social li a {
+.social a,
+.follow {
 	color: #B44596;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
 }
-
+.follow{
+    margin-bottom: 10px;
+}
+.socialicon{
+    display: flex; 
+}
+.socialicon a{
+    margin: 20px 30px 0 0;
+}
+/* footer */
 footer {
-	margin-top: 5px;
 	display: block;
 	position: relative;
-	margin-bottom: 2rem;
     background-color: #CC40AE;
     padding: 20px;
     color: #F0EEEB;
 }
 
-
-
-
-
-
-
-
-
 /* desktop screen */
 @media screen and (min-width: 720px){
 /* only */
 .body{
-    max-width: 1200px;
-}
-.logo{
-    width: 100px;
-    margin: 10px 20px 0 20px ;
-}
-.logo,
-.navigation .list,
-.navigation li{
-    display: flex;	
+    max-width: 1400px;
 }
 
-.flavor{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center;
-}
-/* activities */
-.activity{
-    display: flex;
-    flex-direction: row;
-}
-
-/* footer */
-
-
+.headerback{
+    margin:0 auto;   
+    background-image: url(../images/back1440.jpg);
+    background-position: bottom;
+    width: 90%;
 }
