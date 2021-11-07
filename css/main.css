@@ -1,0 +1,154 @@
+/* reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* mobile screen */
+@media screen and (max-width: 720px){
+.logo{
+    width: 90px;
+    margin: 20px 10px 0 40px ;
+    padding: 0 20px 0 20p;
+}
+.back{
+    position: relative;
+}
+.logo,
+.list{
+    position: absolute;
+}
+.navigation {
+    display: flex;	
+}  
+.navigation .logo,
+	.navigation .list,
+	.navigation li{
+		display: flex;	
+	}
+.list li{   
+    color: #ffffff;
+    font-size: 25px;  
+}
+.list{
+    margin: 40px 30px 0 200px;
+}
+.list li{
+    padding: 15px;
+}
+nav input{
+    width: 90%;
+    border-style:none; 
+    border-radius: 90%;
+}
+nav form{
+    display: flex;
+}
+nav button{
+    background-color:#ffffff;
+}
+.delicious,
+.products{
+    position: absolute;
+}
+.delicious{
+    color: #ffffff;
+    margin: 150px 40px 0 40px;
+}
+.products{
+    margin: 320px 40px 0 40px;
+    background-color: rgb(231, 222, 222);
+    opacity: 0.7;
+    display: flex;
+}
+.products h3,
+.products p{
+    padding: 10px 15px 0 15px;
+}
+
+
+
+/* desktop screen */
+@media screen and (min-width: 720px){
+/* only */
+.body{
+    max-width: 1200px;
+}
+.logo{
+    width: 100px;
+    margin: 10px 20px 0 20px ;
+}
+.logo,
+.navigation .list,
+.navigation li{
+    display: flex;	
+}
+
+.flavor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+/* activities */
+.activity{
+    display: flex;
+    flex-direction: row;
+}
+/* map */
+.map{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+/* footer */
+footer{
+    background-color: rgb(63, 60, 60);
+    color: #ffffff;
+    padding: 10px 0 10px 50px;	
+    width: 100%;
+    bottom: 0px;	
+    line-height:20px;	
+}
+footer a{
+    color:#ffffff;
+}
+}
