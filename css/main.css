@@ -70,13 +70,14 @@ header {
 }
 .logo{
     width: 90px;
-    margin: 10px 20px 0 10px ;
+    margin: 0 20px 0 10px ;
 }
 .navigation,
 .navigation.logo,
 .navigation .list,
 .navigation li{
-	display: flex;	
+	display: flex;
+    justify-content: space-evenly;	
 }
 .list a{   
     color: #F0EEEB;
@@ -133,6 +134,7 @@ header {
 /* container */
 .container{
     margin: 20px;
+    text-align: center;
 }
 .only h2,
 .activities h2{
@@ -162,25 +164,31 @@ header {
     border-radius: 97%;
     color: #F0EEEB;
     margin: 10px;
-   
-
+}
+.activities{
+    text-align: center;
 }
 /* footer info */
 /* hidden maps in screen max-width 720px */
 .footerinfo{
     margin: 20px 20px 5px 20px;
+    text-align: center;
 }
 .maps{
     display: none;
+}
+.social{
+    text-align: center;
 }
 .social h3{
     border:1px solid #CC40AE;
     padding: 10px;
     width:120px;
+    margin:0 auto;
 }
 .social p{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .social a,
 .follow {
@@ -194,9 +202,8 @@ header {
 }
 .socialicon{
     display: flex; 
-}
-.socialicon a{
-    margin: 20px 30px 0 0;
+    justify-content: space-evenly;
+    margin-top: 20px;
 }
 /* footer */
 footer {
@@ -206,6 +213,70 @@ footer {
     padding: 20px;
     color: #F0EEEB;
 }
+footer p{
+    text-align: center;
+}
+/******************
+shop page
+*******************/
+.headerpicture{
+    margin:0 auto;   
+    background-image: url(../images/ice-960.jpg);
+    background-position: bottom;
+    width: 90%;
+    max-width: 100%;
+    padding: 10px;
+    height: 150px;
+    text-align: center;
+}
+.shop-menu{
+    margin: 20px;
+    text-align: center;
+}
+.purplephoto1,
+.matchaphoto1,
+.chocolatephoto1,
+.strawberryphoto1,
+.teaphoto1,
+.totephoto1{
+    height: 220px;
+    width: 100%;
+    margin-top: 15px;
+    border-radius:50%;
+}
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.menu-item {
+	flex-basis: 50%;
+	margin-bottom: 5px;
+    margin-right:10px ;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #B44596;
+    text-align: center;
+}
+.menu-title h4{
+    font-size: 25px;
+    color: #B44596;
+    border: solid 1px #CC40AE;
+    padding: 10px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+.contactsheet h2{
+    padding: 10px;
+    border: solid 1px #CC40AE;
+    margin: 0 auto;
+    width:150px;
+}
+.followus{
+    display: none;
+}
+
+
+
 }
 
 /* desktop screen */
@@ -387,14 +458,5 @@ footer p{
     text-align: center;
     margin-bottom: 30px;
 }
-
-
-
-
-
-
-
-
-
-
 }
+

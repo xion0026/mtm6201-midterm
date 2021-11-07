@@ -12,12 +12,12 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <!-- css -->
-   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
     <!-- header -->
     <header class="headerstyle">
-        <section class="headerback">
+        <section class="headerpicture">
         <nav class="navigation">
             <img class="logo" src="../logo.svg" alt="logo">
             <ul class="list">
@@ -33,14 +33,23 @@
     </header>
 
     	<!-- shop menu -->
-	<main class="wrapper">
+	<main class="shop-menu">
 		<section class="menu-title">
-			<h4><span>Our Products</span>Matcha/Coffee/Strawberry/Tote</h4>
+			<h4><span>Our Products<br><br></span>Matcha/Coffee/Strawberry/Tote</h4>
 		</section>
 
 		<section class="menu">
 			<section class="menu-item">
-				<img src=" " alt="Matcha Ice Cream">
+				<picture>
+          <!--  responsive image -->
+          <source srcset="../images/matcha1920.jpg"
+                   media="(min-width: 720px)">
+                     
+            <source srcset="../images/matcha960.jpg"
+                    media="(max-width:719px)">   
+    
+            <img class="matchaphoto1" src="../images/matcha.jpg" alt="matcha ice">
+               </picture>
 				<section class="menu-content">
 					<h4>
 						Matcha Ice <span>$3.98</span>
@@ -49,7 +58,16 @@
 			</section>
 
 			<section class="menu-item">
-				<img src=" " alt="Chocolate Ice">
+				<picture>
+          <!--  responsive image -->
+          <source srcset="../images/chocolate1920.jpg"
+                   media="(min-width: 720px)">
+                     
+            <source srcset="../images/chocolate960.jpg"
+                    media="(max-width:719px)">   
+    
+            <img class="chocolatephoto1" src="../images/chocolate.jpg" alt="chocolate ice">
+               </picture>
 				<section class="menu-content">
 					<h4>
 						Chocolate Ice <span>$3.98</span>
@@ -58,7 +76,16 @@
 			</section>
 
 			<section class="menu-item">
-				<img src="" alt="Strawberry Ice">
+				<picture>
+          <!--  responsive image -->
+          <source srcset="../images/strawberry1920.jpg"
+                   media="(min-width: 720px)">
+                     
+            <source srcset="../images/strawberry960.jpg"
+                    media="(max-width:719px)">   
+    
+            <img class="strawberryphoto1" src="../images/strawberry.jpg" alt="strawberry ice">
+               </picture>
 				<section class="menu-content">
 					<h4>
 						Strawberry Ice <span>$4.50</span>
@@ -67,7 +94,16 @@
 			</section>
 
 			<section class="menu-item">
-				<img src=" " alt="Tote bag">
+				<picture>
+          <!--  responsive image -->
+          <source srcset="../images/tote1920.jpg"
+                   media="(min-width: 720px)">
+                     
+            <source srcset="../images/tote960.jpg"
+                    media="(max-width:719px)">   
+    
+            <img class="totephoto1" src="../images/tote.jpg" alt="tote ice">
+               </picture>
 				<section class="menu-content">
 					<h4>
 						Tote Bag <span>$9.9</span>
@@ -78,22 +114,15 @@
 		</section>
 	</main>
 
-    <article class="footerinfo">
-        <!-- button -->
-        <section class="viewmore" id="viewmore">
-            <a href="#">
-                <h4 class="viewmore">View More</h4>
-            </a>
-        </section>
-        <br>
+<article class="footerinfo">
 
-        <!-- SOCIAL-->
-        <section class="social">
-            <a href="#">
-                <h2>Contact</h2>
+  <!-- SOCIAL-->
+  <section class="social">
+            <a class="contactsheet" href="#">
+                <h2 >Contact</h2>
             </a>
-            <h3>Follow Us</h3>
-            <ul>
+            <h3 class="followus">Follow Us</h3>
+            <ul class="socialicon">
                 <li>
                   <a href="#">
                     <i class="im im-instagram"></i>
