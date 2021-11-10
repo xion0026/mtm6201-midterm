@@ -265,21 +265,56 @@ shop page
     letter-spacing: 1px;
     margin-top: 5px;
 }
-.contactsheet h2{
-    padding: 10px;
-    border: solid 1px #CC40AE;
-    margin: 0 auto;
-    width:150px;
-}
 .followus{
     display: none;
+}
+.social{
+    margin-bottom: 20px;
 }
 /******************
 contact page
 *******************/
+.contactpage{
+    margin: 20px;
+    text-align: center;
+}
+.lutophoto{
+    height: 350px;
+    width: 100%;
+    margin-top: 15px;
+    
+}
+form{
+    background-color: blanchedalmond;
+    color: #B44596;
+    border: solid 1px #CC40AE ;
 
-
-
+}
+.contactform h1{
+    margin: 10px;
+    padding: 10px;
+    border: solid 2px #CC40AE;
+    background-color: cornsilk;
+    font-size: 20px;
+}
+.submit{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #CC40AE;
+    padding: 10px;
+    color: #F0EEEB;
+    width: 170px;
+}
+.contactform label{
+    font-size: 20px;
+}
+.contactform input{
+    margin-top: 5px;
+    border: solid 1px white;    
+}
+textarea{
+    border: solid 1px white; 
+}
 }
 
 /* desktop screen */
@@ -516,6 +551,75 @@ shop page
     color: #B44596;
     padding-top: 15px;
 }
+.social{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.social h3{
+    color: #B44596;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.footerinfo{
+    text-align: center;
+}
+/**************************
+contact page
+***************/
+.contactpage{
+    margin: 40px 50px 30px 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    
+}
+.lutophoto{
+    height: 550px;
+    max-width: 400px;
+}
+
+form{
+    background-color: blanchedalmond;
+    color: #B44596;
+    border: solid 2px #CC40AE ;
+    padding: 20px;
+    max-width: 400px;
+    margin-bottom: 10px;
+
+}
+.contactform h1{
+    padding: 10px;
+    border: solid 2px #CC40AE;
+    background-color: cornsilk;
+    font-size: 20px;
+    text-align: left;
+    
+}
+.contactform label{
+    font-size: 20px;
+}
+.contactform input{
+    margin-top: 5px;
+    border: solid 1px white;
+}
+textarea{
+    border: solid 1px white; 
+    margin-bottom: 10px;
+}
+.submit{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #CC40AE;
+    padding: 10px;
+    color: #F0EEEB;
+    width: 170px;
+}
+
+
+
+
+
 
 }
 
